@@ -28,9 +28,44 @@ body {
   line-height: 21px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
+}
 
+.newsletter-button {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.button-brown {
+  background-color: #756257;
+}
+
+.button-blue {
+  background-color: #83B3D3;
+}
+
+.button-green {
+  background-color: #7DB54F;
+}
+
+.button {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
 }
 
 .page-header {
@@ -44,10 +79,14 @@ a {
   margin: 0 auto;
 }
 
+ul.reset-list {
+  padding: 0;
+  list-style: none;
+}
+
 .navigation-list {
   width: 450px;
   margin: 0;
-  padding: 0;
 }
 
 .navigation-user {
@@ -56,6 +95,7 @@ a {
 }
 
 .navigation-link {
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -90,19 +130,17 @@ a {
 
 .promo,
 .appointment {
-  text-align: center;
-  margin: 0 auto;
   padding: 0 240px;
 }
 
 .promo-description {
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-align: center;
   color: #000000;
   background-color: #FFFFFF;
-  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -123,11 +161,11 @@ a {
 
 .basic {
   text-align: center;
-  text-decoration: none;
   color: #FFFFFF;
   background-color: #83B3D3;
   width: 400px;
-  height: 384px; 
+  height: 384px;
+
 }
 
 .basic-title {
@@ -142,6 +180,12 @@ a {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+}
+
+ul.reset-fieldset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .features-list,
@@ -163,15 +207,17 @@ a {
   color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url("../images/background.png");
+  margin: 0;
   width: 400px;
-  height: 384px;
+  padding: 0 auto;
 }
 
 .features-other {
   color: #000000;
   background-color: #FFFFFF;
+  margin: 0;
   width: 400px;
-  height: 384px;
+  padding: 0 auto;
 }
 
 .features-title {
@@ -201,7 +247,6 @@ a {
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url("../images/background.png");
   width: 400px;
-  height: 384px;
 }
 
 .reasons-other {
@@ -209,7 +254,6 @@ a {
   background-color: rgba(131, 179, 211, 0.2);
   background-image: url("../images/background.png");
   width: 400px;
-  height: 384px;
 }
 
 .reasons-title {
@@ -232,8 +276,6 @@ a {
   margin: 0;
   padding: 0;
   text-align: center;
-  width: 1200px;
-  height: 417px;
 }
 
 .appointment-title,
@@ -243,6 +285,7 @@ a {
 }
 
 .appointment-title {
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -259,50 +302,6 @@ a {
   color: #333333;
   background-color: #FFFFFF;
   text-decoration: none;
-}
-
-.block-button {
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.newsletter-button {
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #FFFFFF;
-  background-color: #83B3D3;
-}
-
-.button-brown {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: 700;
-  color: #FFFFFF;
-  background-color: #756257;
-  text-transform: uppercase;
-}
-
-.button-blue {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: 700;
-  color: #FFFFFF;
-  background-color: #83B3D3;
-  text-transform: uppercase;
-}
-
-.button-green {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: 700;
-  color: #FFFFFF;
-  background-color: #7DB54F;
-  text-transform: uppercase;
 }
 
 .newsletter {
@@ -324,6 +323,7 @@ a {
 }
 
 .page-footer-container {
+  font-family: "PT Sans", sans-serif;
   display: flex;
   flex-direction: column;
   width: 1200px;
@@ -331,6 +331,7 @@ a {
 }
 
 .page-footer-item {
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -349,9 +350,6 @@ a {
   display: flex;
   width: 1056px;
   margin: 0 auto;
-  text-align: center;
-  color: #000000;
-  background-color: #FFFFFF;
 }
 
 .footer-social-list {
@@ -386,6 +384,10 @@ a {
   background-repeat: no-repeat;
 }
 
+.inner-header {
+  display: flex;
+}
+
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
@@ -418,6 +420,7 @@ a {
   width: 150px;
   margin-right: 67px;
 }
+
 .results {
   color: #000000;
   background-color: #FFFFFF;
@@ -425,6 +428,30 @@ a {
   flex-direction: column;
   width: 1056px;
   margin: 0 auto;
+}
+
+.sorting-container {
+  display: flex;
+  margin-right: 192px;
+}
+
+.sorting-container .button {
+  width: 48px;
+  height: 48px;
+}
+
+.product {
+  display: flex;
+  margin: 0 auto;
+}
+
+.product-photo {
+  padding: 0 36px;
+}
+
+.product-rating {
+  margin: 0 auto;
+  padding: 0;
 }
 
 .house-list-title {

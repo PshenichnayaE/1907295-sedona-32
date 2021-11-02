@@ -8,21 +8,21 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class="navigation-list reset-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html"">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="about.html">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="hotels.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <a class="navigation-logo" href="index.html">
-          <img class="navigation-logo" src="images/navigations/sedona.svg" width="138" height="70.05" alt="Логотип Седона">
+          <img class="navigation-logo" src="images/navigations/sedona.svg" width="138" height="70" alt="Логотип Седона">
         </a>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-list reset-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -34,7 +34,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link"" href="#">Хочу сюда</a>
+            <a class="button navigation-link" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>   
@@ -66,12 +66,12 @@
               <p class="basic-description">Седона — не аттракцион для туристов, там течёт 
               своя жизнь</p>
             </section>          
-            <div class="photo">
+            <div class="photo" style="width: 800px; height: 384px;">
               <img src="images/photo-1.jpg" width="800" height="384" alt="Город Седона">
             </div>
           </div>  
           <div class="features">
-            <ul class="features-list">
+            <ul class="features-list reset-fieldset">
               <li class="features-item">
                 <section class="features-color">
                   <h3 class="features-title">Жильё</h3>
@@ -97,7 +97,7 @@
             </ul>
           </div>
           <div class="line">
-            <div class="photo">
+            <div class="photo" style="width: 800px; height: 384px;">
               <img src="images/photo-2.jpg" width="800" height="384" alt="Мост Дьявола">
             </div>
             <section class="basic">
@@ -108,7 +108,7 @@
             </section>
           </div>        
           <div class="reasons">
-            <ul class="reasons-list">
+            <ul class="reasons-list reset-fieldset">
               <li class="reasons-item">
                 <section class="reasons-color">
                   <h3 class="reasons-title">Небольшая
@@ -142,55 +142,56 @@
           <p class="appointment-info">Укажите предполагаемые даты поездки,
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a class="block-button button-brown" href="#">Поиск гостиниц в седоне</a>
+          <a class="button newsletter-button button-brown" href="#">Поиск гостиниц в седоне</a>
+        </section>
+        <section class="newsletter">
+          <h2 class="page-footer-item">Подпишитесь на рассылку</h2>
+          <p class="page-footer-title">Только полезная информация и никакого спама,
+            честное бойскаутское!</p>
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="newsletter-email">
+              <label class="visually-hidden" for="newsletter-email">
+                e-mail
+              </label>
+              <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+            </p>
+            <button class="button newsletter-button" type="submit">
+              <span class="button newsletter-button button-blue">Подписаться</span>
+            </button>
+          </form>
         </section>
       </div>
     </main>
-  </body>
-  <footer class="page-footer">
-    <div class="page-footer-container">
-      <section class="newsletter">
-        <h2 class="page-footer-item">Подпишитесь на рассылку</h2>
-        <p class="page-footer-title">Только полезная информация и никакого спама,
-          честное бойскаутское!</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="newsletter-email">
-            <label class="visually-hidden" for="newsletter-email">
-              e-mail
-            </label>
-            <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-          </p>
-          <button class="block-button newsletter-button" type="submit">
-            <span class="block-button newsletter-button">Подписаться</span>
-          </button>
-        </form>
-      </section>
-      <section class="footer-social">
-        <h2 class="visually-hidden hidden">Контакты</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="block social-button" href="https://twittr.com/htmlacademy_ru">
-              <span class="visually-hidden">twitter</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button social-button" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">facebook</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button social-button" href="https://www.youtube.com/c/HTMLAcademyRUS">
-              <span class="visually-hidden">YouTube</span>
-            </a>
-          </li>
-        </ul>
-        <address class="contacts-phone">
-          <a class="contacts-phone" href="tel:+78128121212">+7(812)812-12-12</a>
-        </address> 
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img class="htmlacademy-link" src="images/navigations/group.svg" width="114,9" height="32,9" alt="html academy">
-        </a>
-      </section>  
-    </div>  
-  </footer>
+
+    <footer class="page-footer">
+      <div class="page-footer-container">
+        <section class="footer-social">
+          <h2 class="visually-hidden">Контакты</h2>
+          <ul class="footer-social-list reset-list">
+            <li class="footer-social-item">
+              <a class="button social-button" href="https://twittr.com/htmlacademy_ru">
+                <span class="visually-hidden">twitter</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button social-button" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">facebook</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button social-button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                <span class="visually-hidden">YouTube</span>
+              </a>
+            </li>
+          </ul>
+          <address class="contacts-phone">
+            <a class="contacts-phone" href="tel:+78128121212">+7(812)812-12-12</a>
+          </address> 
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+            <img class="htmlacademy-link" src="images/navigations/group.svg" width="115" height="33" alt="html academy">
+          </a>
+        </section>  
+      </div>  
+    </footer>
+  </body>  
 </html>
