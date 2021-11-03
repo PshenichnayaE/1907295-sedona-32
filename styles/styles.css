@@ -26,6 +26,14 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  background: #E5E5E5;
+}
+
+.container {
+  font-family: "PT Sans", sans-serif;
+  width: 1200px;
+  margin: 0 auto;
+  background: #FFFFFF;
 }
 
 .visually-hidden {
@@ -79,7 +87,7 @@ a {
   margin: 0 auto;
 }
 
-ul.reset-list {
+.reset-list {
   padding: 0;
   list-style: none;
 }
@@ -116,11 +124,6 @@ ul.reset-list {
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-}
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .logo {
@@ -165,8 +168,13 @@ ul.reset-list {
   background-color: #83B3D3;
   width: 400px;
   height: 384px;
-
 }
+
+.basic-title,
+.basic-description {
+  margin: 0;
+  padding: 0 90px;
+} 
 
 .basic-title {
   font-size: 24px;
@@ -182,7 +190,7 @@ ul.reset-list {
   font-weight: 400;
 }
 
-ul.reset-fieldset {
+.reset-fieldset {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -227,6 +235,7 @@ ul.reset-fieldset {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .features-description {
@@ -262,6 +271,7 @@ ul.reset-fieldset {
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .reasons-description {
@@ -309,7 +319,6 @@ ul.reset-fieldset {
   color: #FFFFFF;
   background-color: #000000;
   background-image: url("../images/footer-bg.jpg");
-  width: 1200px;
   height: 411px;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -320,13 +329,13 @@ ul.reset-fieldset {
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  height: 120px;
 }
 
 .page-footer-container {
   font-family: "PT Sans", sans-serif;
   display: flex;
   flex-direction: column;
-  width: 1200px;
   margin: 0 auto;
 }
 
@@ -372,8 +381,8 @@ ul.reset-fieldset {
   background-color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 .search {
