@@ -55,7 +55,7 @@
               </li>
             </ul>
           </header>
-          <section class="filter">
+          <section class="filter-catalog">
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
             <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="filter-group">
@@ -131,7 +131,7 @@
         </div> 
         <div class="results">
           <section class="sorting-container">
-            <h2 class="sorting-container">Найдено гостиниц: 38</h2>
+            <h2 class="sorting">Найдено гостиниц: 38</h2>
             <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
               <label class="visually-hidden" for="sorting">Сортировка</label>
               <select class="select-control" id="sorting" name="sorting">
@@ -162,9 +162,11 @@
                   <div class="product-selection">
                     <a class="house-list-link" href="">
                       <h3 class="house-list-title">Amara Resort & Spa</h3>
-                    </a>                   
-                    <p class="house-list-price">Гостиница</p>            
-                    <span class="house-list-price">От 4000 ₽</span>
+                    </a> 
+                    <div class="list-price">               
+                      <p class="house-list-price">Гостиница</p>            
+                      <span class="house-list-price">От 4000 ₽</span>
+                    </div>  
                     <a href="#" class="button button-brown">Подробне</a>
                     <a href="#" class="button button-blue">В избранное</a>
                   </div> 
@@ -181,9 +183,11 @@
                   <div class="product-selection">
                     <a class="house-list-link" href="">
                       <h3 class="house-list-title">Desert Quail Inn</h3>
-                    </a>  
-                    <p class="house-list-price">Мотель</p>
-                    <span class="house-list-price">От 3000 ₽</span>
+                    </a>
+                    <div class="list-price">    
+                      <p class="house-list-price">Мотель</p>
+                      <span class="house-list-price">От 3000 ₽</span>
+                    </div>  
                     <a href="#" class="button button-brown">Подробне</a>
                     <a href="#" class="button button-blue">В избранное</a>
                   </div>
@@ -201,8 +205,10 @@
                     <a class="house-list-link" href="">
                       <h3 class="house-list-title">Villas at Poco Diablo</h3>
                     </a>
-                    <p class="house-list-price">Апартаменты</p>
-                    <span class="house-list-price">От 2000 ₽</span>
+                    <div class="list-price"> 
+                      <p class="house-list-price">Апартаменты</p>
+                      <span class="house-list-price">От 2000 ₽</span>
+                    </div>  
                     <a href="#" class="button button-brown">Подробне</a>
                     <a href="#" class="button button-green">В избранное</a>
                   </div>
@@ -220,8 +226,10 @@
                     <a class="house-list-link" href="">
                       <h3 class="house-list-title">GreenTree Inn</h3>
                     </a>
-                    <p class="house-list-price">Гостиница</p>
-                    <span class="house-list-price">От 3000 ₽</span>
+                    <div class="list-price"> 
+                      <p class="house-list-price">Гостиница</p>
+                      <span class="house-list-price">От 3000 ₽</span>
+                    </div>  
                     <a href="#" class="button button-brown">Подробне</a>
                     <a href="#" class="button button-blue">В избранное</a>
                   </div>
@@ -231,32 +239,48 @@
                 </article>  
               </li>
             </ul> 
-          </section>        
-          <button class="button newsletter-button" type="button">Загрузить еще</button>   
-          <ul class="pagination reset-list reset-list">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-          </ul>
+          </section> 
+          <div class="newsletter-button">    
+            <button class="button newsletter-button button-blue" type="button">Загрузить еще</button>  
+          </div>
+          <section class="pagination-container">
+            <div class="pagination">           
+              <ul class="pagination-list reset-list">
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-current">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">...</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">10</a>
+                </li>
+              </ul>
+            </div>  
+            <div class="quantity">
+              <h2 class="quantity">Гостиниц на странице:</h2>
+              <form class="quantity-type" action="https://echo.htmlacademy.ru/" method="get">
+                <label class="visually-hidden" for="quantity">Количество гостинец на странице</label>
+                <select class="select-control" id="quantity" name="quantity">
+                  <option value="cheap">4</option>
+                </select>
+                <button class="visually-hidden" type="submit">Отсортировать список</button>
+              </form>
+            </div>
+          </section>  
         </div>  
         <section class="newsletter-catalog">
-          <h2 class="page-footer-item-catalog">Подпишитесь на рассылку</h2>
-          <p class="page-footer-title-catalog">Только полезная информация и никакого спама,
+          <h2 class="newsletter-item">Подпишитесь на рассылку</h2>
+          <p class="newsletter-title">Только полезная информация и никакого спама,
             честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="newsletter-email">

@@ -26,7 +26,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background: #E5E5E5;
+  background: #F2F2F2;
 }
 
 .container {
@@ -85,14 +85,18 @@ a {
   display: flex;
   width: 1056px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .reset-list {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap; 
   width: 450px;
   margin: 0;
 }
@@ -103,6 +107,8 @@ a {
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 15px;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
@@ -110,7 +116,11 @@ a {
   text-align: center;
   color: #000000;
   background-color: #FFFFFF;
-  text-decoration: none;
+}
+
+.navigation-user .navigation-link {
+  min-width: 18px;
+  min-height: 22px;
 }
 
 .main-container {
@@ -124,9 +134,11 @@ a {
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding-top: 51px;
 }
 
-.logo {
+.logo,
+.logo-style {
   display: block;
   margin: 0 auto;
 }
@@ -134,6 +146,11 @@ a {
 .promo,
 .appointment {
   padding: 0 240px;
+}
+
+.promo {
+  padding-top: 63px; 
+  padding-bottom: 79px;
 }
 
 .promo-description {
@@ -145,6 +162,7 @@ a {
   color: #000000;
   background-color: #FFFFFF;
   text-transform: uppercase;
+  padding-bottom: 23px;
 }
 
 .promo-reasons {
@@ -155,6 +173,11 @@ a {
   color: #333333;
   background-color: #FFFFFF;
   text-decoration: none;
+}
+
+.promo-description,
+.promo-reasons {
+  margin: 0;
 }
 
 .line {
@@ -173,7 +196,7 @@ a {
 .basic-title,
 .basic-description {
   margin: 0;
-  padding: 0 90px;
+  padding: 0px 90px;
 } 
 
 .basic-title {
@@ -181,6 +204,7 @@ a {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 98px;
 }
 
 .basic-description {
@@ -188,6 +212,8 @@ a {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .reset-fieldset {
@@ -217,7 +243,7 @@ a {
   background-image: url("../images/background.png");
   margin: 0;
   width: 400px;
-  padding: 0 auto;
+  padding: 0 auto; 
 }
 
 .features-other {
@@ -236,6 +262,8 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 20px;
+  padding-top: 184px;
 }
 
 .features-description {
@@ -245,6 +273,7 @@ a {
   color: #333333;
   text-decoration: none;
   text-transform: none;
+  padding-bottom: 79px;
 }
 
 .reasons {
@@ -272,6 +301,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   margin: 0;
+  padding-top: 98px;
 }
 
 .reasons-description {
@@ -280,12 +310,21 @@ a {
   font-weight: 400;
   text-decoration: none;
   text-transform: none;
+  margin-top: 25px;
+  padding-bottom: 77px;
 }
+
+.number {
+  padding-top: 25px;
+  padding-bottom: 26px;
+}  
 
 .appointment {
   margin: 0;
   padding: 0;
   text-align: center;
+  padding-top: 91px;
+  padding-bottom: 91px;
 }
 
 .appointment-title,
@@ -303,6 +342,8 @@ a {
   background-color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 15px; 
 }
 
 .appointment-info {
@@ -312,6 +353,8 @@ a {
   color: #333333;
   background-color: #FFFFFF;
   text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 73px; 
 }
 
 .newsletter {
@@ -322,6 +365,32 @@ a {
   height: 411px;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.newsletter:last-child {
+  margin-bottom: 0;
+}
+
+.newsletter-item {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding-top: 94px;
+  margin-bottom: 15px;
+}
+
+.newsletter-title {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
 
 .page-footer {
@@ -329,7 +398,6 @@ a {
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  height: 120px;
 }
 
 .page-footer-container {
@@ -339,36 +407,31 @@ a {
   margin: 0 auto;
 }
 
-.page-footer-item {
-  font-family: "PT Sans", sans-serif;
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.page-footer-title {
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 400;
-  text-decoration: none;
-}
-
 .footer-social {
   display: flex;
   width: 1056px;
   margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
-.footer-social-list {
-  width: 110px;
-  margin-right: 57px;
+footer-social-list {
+  display: flex;
+  flex-wrap: wrap; 
+  margin: 0;
+  padding: 0;
+  width: 240px;
+}
+
+.footer-social-item {
+  display: flex;
+  flex-wrap: wrap; 
+  width: 33px;
+  height: 33px;
 }
 
 .htmlacademy-link {
   margin-left: auto;
-  max-width: 185px;
 }
 
 .contacts-phone {
@@ -384,6 +447,7 @@ a {
   margin: 0 auto;
   padding: 0 auto;
 }
+
 
 .search {
   color: #FFFFFF;
@@ -401,6 +465,20 @@ a {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+  margin: 0;
+  padding-top: 35px;
+  margin-bottom: 5px; 
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs-item {
+  margin-right: 30px;
+  padding-bottom: 45px;
 }
 
 .control-label {
@@ -420,6 +498,7 @@ a {
   display: flex;
   width: 1056px;
   margin: 0 auto;
+  padding-bottom: 83px;
 }
 
 .filter-title {
@@ -441,26 +520,41 @@ a {
 
 .sorting-container {
   display: flex;
-  margin-right: 192px;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  padding-bottom: 45px;
+}
+
+.sorting {
+  margin: 0;
+}
+
+.sorting-type  {
+  margin-left: auto;
+  margin-right: 81px;
 }
 
 .sorting-container .button {
   width: 48px;
   height: 48px;
+  margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 .product {
   display: flex;
   margin: 0 auto;
+  padding: 31px 0;
 }
 
 .product-photo {
-  padding: 0 36px;
+  margin-right: 37px;
 }
 
 .product-rating {
-  margin: 0 auto;
   padding: 0;
+  margin-left: auto;
 }
 
 .house-list-title {
@@ -470,6 +564,7 @@ a {
   color: #000000;
   background-color: #FFFFFF;
   text-decoration: none;
+  margin: 0;
 }
 
 .house-list-price {
@@ -479,7 +574,15 @@ a {
   color: #333333;
   background-color: #FFFFFF;
   text-decoration: none;
+  margin: 0;
 }
+
+.list-price {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1px;
+  margin-bottom: 31px;
+}  
 
 .reyting {
   font-size: 16px;
@@ -488,15 +591,19 @@ a {
   color: #333333;
   background-color: #FFFFFF;
   text-decoration: none;
+  margin: 0;
 }
 
 .newsletter-catalog {
+  width: 1200px;
+  margin: 0 auto;
   text-align: center;
   color: #000000;
   background-color: #FFFFFF;
 }
 
 .page-footer-item-catalog {
+  width: 1200px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -514,18 +621,48 @@ a {
   text-decoration: none;
 }
 
+.newsletter-button {
+  margin: 0 auto;
+  margin-top: 31px;
+  margin-bottom: 30px;
+}
+
 .pagination-link pagination-current {
   color: #000000;
   background-color: #E5E5E5;
   text-decoration: none;
 }
 
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .pagination {
+  display: flex;
   background-color: #FFFFFF;
 }
 
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  font-weight: 700;
   background-color: #83B3D3;
+  text-decoration: none;
 }
 
 .pagination-current {
@@ -536,4 +673,12 @@ a {
 .field {
   color: #000000;
   background-color: #F2F2F2;;
+}
+
+.quantity {
+  display: flex;
+  color: #333333;
+  font-size: 18px;
+  line-height: 23px;
+  text-decoration: none;
 }
