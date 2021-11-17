@@ -1222,7 +1222,6 @@ a {
 }
 
 .modal-auth {
-  width: 715px;
   border-radius: 30px;
 }
 
@@ -1280,6 +1279,8 @@ a {
 .passenger {
   display: flex;
   margin-bottom: 40px;
+  justify-content: space-between;
+  width: 514px;
 }
 
 .modal-search-button {
@@ -1293,7 +1294,7 @@ a {
 .quantity-adult,
 .quantity-children {
   display: flex;
-  justify-content: space-between;
+  width: 84px;
 }
 
 .auth-adult,
@@ -1317,4 +1318,31 @@ a {
 
 .auth-form-field {
   border-radius: 4px;
+}
+
+.button-less {
+  appearance: none;
+  background-image: url("../images/minus.svg");
+  background-repeat: no-repeat;
+  background-position: left 19px center;
+}
+
+.button-more {
+  appearance: none;
+  background-image: url("../images/plus.svg");
+  background-repeat: no-repeat;
+  background-position: right 19px center;
+}
+
+.auth-form-field-age {
+  width: 20px;
+}
+
+.note {
+  position: absolute;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background:  #83B3D3;
 }
