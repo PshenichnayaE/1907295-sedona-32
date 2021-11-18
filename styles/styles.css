@@ -1349,10 +1349,7 @@ a {
   background-position: right 19px center;
 }
 
-.adult,
-.children {
-  display: flex;
-}
+
 
 .passenger {
   display: flex;
@@ -1372,15 +1369,58 @@ a {
 .quantity-adult,
 .quantity-children {
   display: flex;
-  width: 84px;
 }
 
-.auth-adult,
-.auth-children {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 155px;
+.button-less {
+  appearance: none;
+  background-image: url("../images/minus.svg");
+  background-repeat: no-repeat;
+  background-position: left 19px center;
 }
+
+.button-more {
+  appearance: none;
+  background-image: url("../images/plus.svg");
+  background-repeat: no-repeat;
+  background-position: right 19px center;
+}
+
+.adult,
+.children {
+  display: flex;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 4px;
+}
+
+.auth-children {
+  display: flex;
+  width: 50%;
+  height: 50px;
+  position: relative;
+
+}
+
+.auth-form-field-age {
+  width: 20px;
+}
+
+.button-less,
+.button-more {
+  padding: 0;
+}
+
+/*.button-less::-webkit-outer-spin-button,
+.button-less::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.button-more::-webkit-outer-spin-button,
+.button-more::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}*/
 
 .basket {
   opacity: 0.2;
@@ -1398,24 +1438,6 @@ a {
   border-radius: 4px;
 }
 
-.button-less {
-  appearance: none;
-  background-image: url("../images/minus.svg");
-  background-repeat: no-repeat;
-  background-position: left 19px center;
-}
-
-.button-more {
-  appearance: none;
-  background-image: url("../images/plus.svg");
-  background-repeat: no-repeat;
-  background-position: right 19px center;
-}
-
-.auth-form-field-age {
-  width: 20px;
-}
-
 .note {
   width: 25px;
   height: 25px;
@@ -1423,3 +1445,18 @@ a {
   background:  #83B3D3;
 }
 
+.popover-note {
+  width: 256px;
+  min-height: 143px;
+  background: #333333;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.window {
+  position: absolute;
+  margin: 0;
+  padding: 15px 18px 18px 22px;
+}
