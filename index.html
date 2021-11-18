@@ -279,23 +279,43 @@
               <div class="adult">
                 <label for="auth-adult">Взрослые:</label>
                 <div class="quantity-adult">
-                  <button class="button button-less" type="button">минус</button>
+                  <button class="button button-less" type="button">
+                    <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">минус</span>
+                  </button>  
                   <input class="auth-form-field-age" type="text" id="auth-adult" name="auth-adult" placeholder="2">
-                  <button class="button button-more" type="button">плюс</button>
+                  <button class="button button-more" type="button">
+                    <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">плюс</span>
+                  </button>  
                 </div>
               </div>
               <div class="children">
                 <label for="auth-children">Дети:</label>
-                <a class="note" href="#">
-                  <span class="visually-hidden">заметка</span>
-                </a>
-                <div class="popover popover-note dropdown-hide">
+                <button class="info" type="button">
+                  <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                </button>
+                <div class="popover popover-info dropdown-hide">
                   <p class="window">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
                 </div>
                 <div class="quantity-children">
-                  <button class="button button-less" type="button">минус</button>
+                  <button class="button button-less" type="button">
+                    <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">минус</span>
+                  </button>
                   <input class="auth-form-field-age" type="text" id="auth-children" name="auth-children" placeholder="1"">
-                  <button class="button button-more" type="button">плюс</button>
+                  <button class="button button-more" type="button">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">плюс</span>
+                  </button>
                 </div>
               </div>
             </div>

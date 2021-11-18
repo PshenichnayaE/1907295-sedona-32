@@ -1277,6 +1277,14 @@ a {
   border-radius: 0px 0px 20px 20px;
 }
 
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 70px;
+  background-color: #FFFFFF;
+  width: 575px;
+}
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -1336,7 +1344,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 11px;
+  margin-bottom: 40px;
 }
 
 .data-entry-field {
@@ -1369,6 +1377,7 @@ a {
 .quantity-adult,
 .quantity-children {
   display: flex;
+  height: 50px;
 }
 
 .button-less {
@@ -1391,6 +1400,11 @@ a {
   box-sizing: border-box;
   border: 0;
   border-radius: 4px;
+  align-items: center;
+}
+
+.auth-adult {
+  width: 155px;
 }
 
 .auth-children {
@@ -1398,29 +1412,19 @@ a {
   width: 50%;
   height: 50px;
   position: relative;
-
 }
 
 .auth-form-field-age {
   width: 20px;
 }
 
-.button-less,
-.button-more {
-  padding: 0;
+.button-less {
+  padding: 24px 0px 25px 19px;
 }
 
-/*.button-less::-webkit-outer-spin-button,
-.button-less::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
+.button-less {
+  padding: 18px 19px 19px 0px;
 }
-
-.button-more::-webkit-outer-spin-button,
-.button-more::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
-}*/
 
 .basket {
   opacity: 0.2;
@@ -1438,14 +1442,17 @@ a {
   border-radius: 4px;
 }
 
-.note {
+.info {
+  position: relative;
   width: 25px;
   height: 25px;
   border-radius: 50%;
   background:  #83B3D3;
+  border: 0;
 }
 
-.popover-note {
+.popover-info {
+  position: absolute;
   width: 256px;
   min-height: 143px;
   background: #333333;
