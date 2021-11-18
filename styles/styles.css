@@ -1080,6 +1080,7 @@ a {
 }
 
 .rating-info {
+  position: relative;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
@@ -1348,16 +1349,17 @@ a {
 }
 
 .data-entry-field {
+  position: relative;
   display: flex;
   border-radius: 4px;
   width: 420px;
-  appearance: none;
-  background-image: url("../images/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: right 19px center;
 }
 
-
+.calendar {
+  position: absolute;
+  top: 18px;
+  right: 19px;
+}
 
 .passenger {
   display: flex;
@@ -1384,14 +1386,14 @@ a {
   appearance: none;
   background-image: url("../images/minus.svg");
   background-repeat: no-repeat;
-  background-position: left 19px center;
+  background-position: right 19px center;
 }
 
 .button-more {
   appearance: none;
   background-image: url("../images/plus.svg");
   background-repeat: no-repeat;
-  background-position: right 19px center;
+  background-position: left 19px center;
 }
 
 .adult,
@@ -1418,14 +1420,6 @@ a {
   width: 20px;
 }
 
-.button-less {
-  padding: 24px 0px 25px 19px;
-}
-
-.button-less {
-  padding: 18px 19px 19px 0px;
-}
-
 .basket {
   opacity: 0.2;
 }
@@ -1442,7 +1436,7 @@ a {
   border-radius: 4px;
 }
 
-.info {
+.note {
   position: relative;
   width: 25px;
   height: 25px;
@@ -1451,7 +1445,7 @@ a {
   border: 0;
 }
 
-.popover-info {
+.popover-note {
   position: absolute;
   width: 256px;
   min-height: 143px;
