@@ -91,6 +91,81 @@ a {
   width: 160px;
 }
 
+.button-navigation:hover,
+.button-search:hover,
+.button-brown.button-catalog:hover {
+  background-color: #615048;
+}
+
+.button-navigation:focus,
+.button-search:focus,
+.button-brown.button-catalog:focus {
+  background-color: #615048;
+  outline: 3px solid #83B3D3;
+}
+
+.button-navigation:active,
+.button-search:active,
+.button-brown.button-catalog:active {
+  background-color: #615048;
+  border: 0;
+  opacity: 0.3;
+}
+
+.button-green.button-catalog:hover {
+  background-color: #6C9E42;
+}
+
+.button-green.button-catalog:focus {
+  background-color: #6C9E42;
+  outline: 3px solid #615048;
+}
+
+.button-green.button-catalog:active {
+  background-color: #6C9E42;
+  border: 0;
+  opacity: 0.3;
+}
+
+.pagination-link:hover,
+.button-blue.button-loading:hover,
+.button-blue.button-implement:hover,
+.button-blue.newsletter-button:hover,
+.button-blue.button-catalog:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-link:focus,
+.button-blue.button-loading:focus,
+.button-blue.button-implement:focus,
+.button-blue.newsletter-button:focus,
+.button-blue.button-catalog:focus {
+  background-color: #68A2CA;
+  outline: 3px solid #615048;
+}
+
+.pagination-link:active,
+.button-blue.button-loading:active,
+.button-blue.button-implement:active,
+.button-blue.newsletter-button:active,
+.button-blue.button-catalog:active {
+  background-color: #68A2CA;
+  border: 0;
+  opacity: 0.3;
+}
+
+.house-list-image:hover {
+  opacity: 0.6;
+}
+
+.house-list-image:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.house-list-image:active {
+  opacity: 0.3;
+}
+
 .loading {
   border-top: 1px solid #E6E6E6;
 }
@@ -650,16 +725,20 @@ a {
 }
 
 .contacts-phone:hover,
-.htmlacademy-link:hover {
+.navigation-link:hover {
   color: #756257;
 }
 
 .contacts-phone:focus,
+.navigation-link:focus,
 .htmlacademy-link:focus {
   color: #756257;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   border-radius: 4px;
-  margin: 0px 10px;
+}
+
+.htmlacademy-link svg:hover {
+  fill:  #68A2CA;
 }
 
 .search {
@@ -1339,10 +1418,9 @@ a {
 }
 
 .note {
-  position: absolute;
-  align-items: center;
   width: 25px;
   height: 25px;
   border-radius: 50%;
   background:  #83B3D3;
 }
+
