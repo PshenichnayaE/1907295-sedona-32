@@ -150,7 +150,6 @@ a {
 .button-blue.newsletter-button:active,
 .button-blue.button-catalog:active {
   background-color: #68A2CA;
-  border: 0;
   opacity: 0.3;
 }
 
