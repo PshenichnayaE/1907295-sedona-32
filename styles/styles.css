@@ -1203,6 +1203,14 @@ a {
   border: 0;
 }
 
+.field:hover {
+  background-color: #E6E6E6;
+}
+
+.field:focus {
+  outline: 3px solid #83B3D3;
+}
+
 .newsletter-email {
   margin: 0;
 }
@@ -1425,14 +1433,14 @@ a {
 
 .button-less {
   appearance: none;
-  background-image: url("../images/minus.svg");
+  /*background-image: url("../images/minus.svg");*/
   background-repeat: no-repeat;
   background-position: right 19px center;
 }
 
 .button-more {
   appearance: none;
-  background-image: url("../images/plus.svg");
+  /*background-image: url("../images/plus.svg");*/
   background-repeat: no-repeat;
   background-position: left 19px center;
 }
