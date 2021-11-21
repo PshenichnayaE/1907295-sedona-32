@@ -632,8 +632,8 @@ a {
   left: 4px;
   width: 12px;
   height: 10px;
-  background-color: #3F5E72;
   content: "";
+  background-image: url("../images/tick.svg");
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -649,6 +649,19 @@ a {
   background-color: #3F5E72;
   border-radius: 50%;
   content: "";
+}
+
+.control-mark:hover {
+  opacity: 0.6;
+}
+
+.control-mark:focus {
+  outline: 3px solid #83B3D3;
+  opacity: 0.6;
+}
+
+.control-mark:active {
+  opacity: 0.3;
 }
 
 .select-control {
@@ -677,9 +690,18 @@ a {
   background-position: right 21px center;
 }
 
-.select-control-list:hover,
-.select-control-list:focus {
+
+.select-control:hover,
+.select-control-list:hover {
   border-color: #83B3D3;
+}
+
+.favourites-item:hover {
+  opacity: 0.6;
+}
+
+.favourites-item:focus {
+  outline: 3px solid #83B3D3;
 }
 
 .page-footer {
@@ -753,6 +775,7 @@ a {
 
 .social-button:focus {
   outline: 3px solid #68A2CA;
+  outline-offset: 5px;
 }
 
 .search {
@@ -786,8 +809,6 @@ a {
 .breadcrumbs-item {
   margin-right: 30px;
 }
-
-
 
 .inner-header {
   display: flex;
@@ -1027,9 +1048,9 @@ a {
   color: #756257;
 }
 
-.house-list-title:focus-visible {
+.house-list-title:focus {
   color: #756257;
-  outline: 3px solid #83B3D3;
+  border: 3px solid #83B3D3;
 }
 
 .house-list-title:active {
@@ -1429,20 +1450,22 @@ a {
 .quantity-children {
   display: flex;
   height: 50px;
+  width: 133px;
+  position: relative;
 }
 
 .button-less {
-  appearance: none;
-  /*background-image: url("../images/minus.svg");*/
-  background-repeat: no-repeat;
-  background-position: right 19px center;
+  position: absolute;
+  top: 18px;
+  left: 19px;
+  padding: 0;
 }
 
 .button-more {
-  appearance: none;
-  /*background-image: url("../images/plus.svg");*/
-  background-repeat: no-repeat;
-  background-position: left 19px center;
+  position: absolute;
+  top: 18px;
+  right: 19px;
+  padding: 0;
 }
 
 .adult,
@@ -1452,21 +1475,22 @@ a {
   border: 0;
   border-radius: 4px;
   align-items: center;
-}
-
-.auth-adult {
-  width: 155px;
+  justify-content: space-between;
 }
 
 .auth-children {
   display: flex;
   width: 50%;
   height: 50px;
-  position: relative;
 }
 
 .auth-form-field-age {
   width: 20px;
+  border: none;
+  background-color: #F2F2F2;
+  padding-left: 50%;
+  padding-right: 50%;
+  border-radius: 4px;
 }
 
 .basket {
@@ -1529,4 +1553,8 @@ a {
   font-weight: 400;
   font-size: 16px;
   color: #333333;
+}
+
+.icon svg:hover {
+  fill: #68A2CA;
 }
