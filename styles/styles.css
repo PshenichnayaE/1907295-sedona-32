@@ -28,14 +28,14 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 18px;
   line-height: 21px;
   background: #F2F2F2;
 }
 
 .container {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   width: 1200px;
   margin: 0 auto;
   background: #FFFFFF;
@@ -251,7 +251,7 @@ a {
 .navigation-link {
   display: block;
   padding: 19px 10px 20px 10px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -329,7 +329,7 @@ a {
 }
 
 .promo-description {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   line-height: 36px;
   font-weight: 700;
   text-align: center;
@@ -382,7 +382,7 @@ a {
 }
 
 .basic-description {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -511,7 +511,7 @@ a {
 }
 
 .appointment-title {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -574,7 +574,7 @@ a {
 }
 
 .newsletter-item {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -709,7 +709,7 @@ a {
 }
 
 .page-footer-container {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
@@ -746,7 +746,7 @@ a {
 }
 
 .contacts-phone {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
@@ -1269,7 +1269,7 @@ a {
   transform: translateX(-50%);
   box-sizing: border-box;
   width: 400px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   color: #000000;
   background-color: #FFFFFF;
   min-height: 232px;
@@ -1405,7 +1405,7 @@ a {
 .modal-title {
   margin: 0;
   margin-bottom: 32px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 30px;
   line-height: 40px;
   font-weight: 700;
